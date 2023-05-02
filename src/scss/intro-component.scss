@@ -38,7 +38,8 @@ main {
 
             .title-price {
                 min-height: 10%;
-                background-color: blue;
+                background-color: $color-Blue;
+
             }
 
             .form-main {
@@ -47,6 +48,11 @@ main {
                 .form-control {
                     // border: 1px solid black;
                     height: 55px;
+                }
+
+                .btn-Form {
+                    border: none;
+                    background-color: $color-Green !important;
                 }
             }
         }
