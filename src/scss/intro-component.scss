@@ -1,0 +1,119 @@
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+@import './variables';
+// @import 'bootstrap/scss/mixins/breakpoints';
+
+
+body {
+    background-image: url('public/images/bg-intro-desktop.png');
+    background-color: $color-Red;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.intro-container {
+    // border: 3px solid red;
+    height: 600px;
+
+    .section-main {
+
+        .section-title {}
+
+        .section-form {
+
+            .title-price {
+                min-height: 10%;
+                background-color: blue;
+            }
+
+            .form-main {
+                height: 90%;
+
+                .form-control {
+                    // border: 1px solid black;
+                    height: 55px;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+
+        .section-main {
+
+            .section-title {
+                padding-left: 0px !important;
+            }
+    
+            .section-form {
+    
+                .title-price {
+                }
+    
+                .form-main {
+                    
+    
+                    .form-control {
+                        // border: 1px solid black;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        height: auto;
+        .section-main {
+
+            .section-title {
+                height: auto !important;
+
+                h1, p {
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 2.5rem !important;
+                }
+
+                p {
+                    font-size: 16px !important;
+                }
+            }
+    
+            .section-form {
+    
+                .title-price {
+                }
+    
+                .form-main {
+                    
+    
+                    .form-control {
+                        // border: 1px solid black;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
